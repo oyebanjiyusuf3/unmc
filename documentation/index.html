@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/favicon.ico">
+
+    <title>Pike Admin PRO Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">            
+            <li class="nav-item">
+              <a target="_blank" class="nav-link active" href="https://www.pikephp.com/contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Pike Admin PRO</h3>
+      </header>
+
+      <main role="main">
+
+        <div class="jumbotron">
+          <h1 class="display-3">Pike Admin Pro Documentation</h1>          
+          <p><a class="btn btn-success" target="_blank" href="https://www.pikephp.com/pike-admin-pro" role="button">Check all features</a></p>
+        </div>
+
+        <div class="row marketing">
+          <div class="col-lg-12">
+			<p>This documentation is available for version 2.1.x. For any updates, please visit our website.</p>
+            <h4>Files and Folders Structure</h4>
+            <p>In your zip archive you have 3 folders: "Admin", "Documentation" and "Frontend-Template"</p>
+			<p><b>Admin folder</b>: here are all files required for administration area. Upload this folder to your server. Optionaly, you can rename this folder (do not forget to change folder name in config.php file if you rename it).</p>
+			<p><b>FrontEnd-Template folder</b>. Here you have all website template files. You can upload files inside this folder to your location where you want to install website template (in root, in separate folder or subdomain). Please note that it is a separate config.php file that you must edit. It is not required to use our template but it is a good start if you want to build a complex template that will use content added in our Pike Admin administration area.</p>
+
+            <h4>Requirements</h4>
+            <p>- PHP 5.3+ with pdo extension enabled (it is default enabled)<br />
+			- MySQL database<br />
+			- Web server with ModRewrite support (if you use Apache server, you have a .htaccess file which you must upload)<br />
+			- Script require a domain name (or subdomain) to be installed.</p>
+			
+            <h4>Installation</h4>
+            <p>STEP 1: Unzip and copy script files and folders on the server (using an FTP program).</p>
+
+			<p>STEP 2: Create a database and a user for that database (eg. in cPanel -> MySQL Databases)</p>
+
+			<p>STEP 3: Import tables file (/admin/install/tables.sql). Steps to import a file: - go to phpMyAdmin (or another database management script) - select your database - click on "Import" button - choose file to upload (located in /admin/install/tables.sql) - upload (import) file</p>
+
+			<p>STEP 4: Edit the file "config.php" located in "admin" folder and add database connect details and url where you uploaded the "admin" folder.</p>
+
+			<p>STEP 5: Make writable (chmod 777) folder "uploads" folder and all subfolders ("avatars", "images", "large", "small", "temp")</p>
+			
+			<p>STEP 6: Login in admin area. Default admin connection details are: demo@pikephp.com (as email) and 123456 (as password). You can change this details in admin area (my profile).</p>
+			
+			<p>STEP 7 (required for frontend-template only): If you want to use our default front-end template, you can upload files inside "frontend-template" to your server. Don't forget to upload .htacess file (located in root of "frontend-template"folder). Also you need to edit settings in config.php file located in "frontend-templae" folder too.</p>
+			
+			<p>IMPORTANT: <br />
+			- It is strongly recomended to use a SMTP server to manage sending emails (related to users registration, forget password, activate account...). We recomend using <a target="_blank" href="https://www.mailgun.com">Mailgun SMTP server</a>.<br />
+			- It is strongly recomended to use Google reCAPTCHA API to prevent spam related to users registration and contact messages. <a target="_blank" href="https://www.google.com/recaptcha/">Get reCAPTCHA keys</a>.<br />
+			If you want support to setup and integrate this products in your software, you can contact us (note that this will be a paid support).
+			</p>
+			
+			
+			
+			<h4>Files and Folders Structure for "admin" area</h4>
+			<p><b>"assets"</b> folder. Here are all assets files (css styles, javascripts, images, fonts, plugins...)</p>
+			<p><b>"core"</b> folder. Here you have all core php files that will process content related to users, registration, articles, contact messages and so...</p>
+			<p><b>"template-files"</b> folder. Here you have all template files in php format.</p>
+			<p><b>"upload"</b> folder. Here you have all media content added in admin area (user avatars, article images, slider images...)</p>
+			<p>Files in root admin folder:<br/>
+			- index.php - will handle login area (login, registration, reset password...);<br />
+			- account.php - will handle adminsitartion area after you login;<br />
+			- global-head.php - will handle all html content in <i>head</i> area that will be loaded in all admin pages;<br />
+			- global-footer.php - will handle all footer html content that will be loaded in all admin pages;<br />
+			- navigation.php - will handle top horizontal navigation inside admin area;<br />
+			- sidebar.php - will handle left vertical sidebar where you have links to all sections inside admin area;<br />
+			</p>
+			
+          </div>
+
+
+          <div class="col-lg-12">
+            <h4>FAQ</h4>
+            <p><b>I want to edit / delete or add pages in admin area</b></p>
+			<p>Admin pages are located in "templates-pages" folder inside admin folder. Left sidebar (with all admin sections links) are located in "sidebar.php" file.</p>
+			<p>If you add / edit a page, keep in mind that the same filename must be present in sidebar.php</p>
+			<p>Example: in sidebar if you have a link like <pre><code>... href="account.php?page=my-custom-page ...</code></pre>The filename inside "templates-pages" must be "my-custom-page.php"</p>
+			
+			<hr />
+			
+			<p><b>Users roles</b></p>
+			<p>We didn't implement users roles and separate template files depending on permission. It is your responsability to code this. All users roles have access to all pages.</p>
+			
+			<hr />
+			
+			<p><b>Custom changes</b></p>
+			<p>Please note that you must have some development knowledge (php, mysql, html, css) to make modifications to the software. We do not offer free support about general development techniques. Our free support is related to errors / bugs of this product only.</p>
+			<p>If you want to hire us for custom changes or any custom projects, you can contact us here to talk all details about your project: <a target="_blank" href="https://www.pikephp.com/contact.html">Contact Us</a></p>
+			
+			<hr />
+			
+			<h4 class="text-dark mt-5">Copyright and License for PRO Edition</h4>   
+				Copyright &copy; <?php echo date("Y");?> <a target="_blank" href="https://www.pikephp.com">Pike Web Development</a>.<br />
+				Pike Admin PRO Edition require to buy a license for each domain where you want to install it.
+				<div class="mb-3"></div>
+				<div class="row">
+					<div class="col-md-6 mx-auto">
+					<span class="text-success"><b>Permissions</b></span> for pro edition: 
+					<li>you can use for personal or comercial use</li>
+					<li>you can make modifications to the code</li>
+					<li>you can include it in your free or paid projects for your use or for your clients</li>
+					<li>you can remove visible copyright links</li>
+					</div>
+					<div class="col-md-6 mx-auto">
+					<span class="text-danger"><b>Limitations</b></span> for pro edition: 
+					<li>you must buy a license for every domain where you want to install the software. A domain license allow to install multiple instances of the software on any part of your domain (root, subdomains or subfolders)/</li>
+					<li>you can NOT sell, resell or distribute (free or paid) the software or any part of the software.</li>			
+					</div>
+				</div>	
+			
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        <p>&copy; <a target="_blank" href="https://www.pikephp.com">Pike Web Development</a></a></p>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>

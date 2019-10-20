@@ -1,0 +1,358 @@
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+#about-us {
+	width: 100%;
+ 	height: 60vh;
+  	position: relative;
+  	background: url("../img/intro-carousel/4.jpg") center center no-repeat;
+  	background-size: cover; 
+}
+
+#about-us .about-content{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#about-us .about-content h2 {
+  color: #E6BE8A;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#about-us .about-content h2 span {
+  color: #ffaf00;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#about-us .about-content p {
+  color: #FFFFFF;
+  font-size: 18pt;
+  text-shadow: 2px 2px 3px #000;
+}
+
+@media (max-width: 767px) {
+  #about-us .about-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Baths Page
+--------------------------------------------------------------*/
+#baths {
+	width: 100%;
+	height: 75vh;
+	position: relative;
+	background: url("../images/banners/baths-banner.jpg") no-repeat;
+	background-size: cover; 
+}
+
+#baths .baths-content{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#baths .baths-content h2 {
+  color: #E6BE8A;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#baths .baths-content h2 span {
+  color: #ffaf00;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#baths .baths-content p {
+  color: #FFFFFF;
+  font-size: 18pt;
+  text-shadow: 2px 2px 3px #000;
+}
+
+@media (max-width: 767px) {
+  #baths .baths-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Basins Page
+--------------------------------------------------------------*/
+#basins {
+	width: 100%;
+	height: 75vh;
+	position: relative;
+	background: url("../images/banners/basins-banner.jpg") no-repeat;
+	background-size: cover;
+}
+
+#basins .basins-content{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#basins .basins-content h2 {
+  color: #E6BE8A;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#basins .basins-content h2 span {
+  color: #ffaf00;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#basins .basins-content p {
+  color: #FFFFFF;
+  font-size: 18pt;
+  text-shadow: 2px 2px 3px #000;
+}
+
+@media (max-width: 767px) {
+  #basins .basins-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Portfolio Page
+--------------------------------------------------------------*/
+#gallery {
+	width: 100%;
+	height: 60vh;
+	position: relative;
+	background: url("../img/intro-carousel/1.jpg") center center no-repeat;
+	background-size: cover; 
+}
+
+#gallery .gallery-content{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#gallery .gallery-content h2 {
+  color: #E6BE8A;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#gallery .gallery-content h2 span {
+  color: #ffaf00;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#gallery .gallery-content p {
+  color: #FFFFFF;
+  font-size: 18pt;
+  text-shadow: 2px 2px 3px #000;
+}
+
+@media (max-width: 767px) {
+  #gallery .gallery-content h2 {
+    font-size: 34px;
+  }
+}
+
+#preview {
+	background: #fff;
+	padding: 30px 0;
+}
+
+#preview .preview-text {
+	padding: 20px;
+	text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+# Contact Page
+--------------------------------------------------------------*/
+#reach {
+	width: 100%;
+	height: 60vh;
+	position: relative;
+	background: url("../img/intro-carousel/3.jpg") center center no-repeat;
+	background-size: cover; 
+}
+
+#reach .reach-content{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#reach .reach-content h2 {
+  color: #E6BE8A;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#reach .reach-content h2 span {
+  color: #ffaf00;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#reach .reach-content p {
+  color: #FFFFFF;
+  font-size: 18pt;
+  text-shadow: 2px 2px 3px #000;
+}
+
+@media (max-width: 767px) {
+  #reach .reach-content h2 {
+    font-size: 34px;
+  }
+}
+
+.socials a {
+	color: #fff;
+	padding: 4px 12px;
+	display: inline-block;
+	line-height: 1px;
+}
+
+.socials a:hover {
+	color: #ffaf00;
+}
+
+
+/*--------------------------------------------------------------
+# About CSS Design For all content across
+--------------------------------------------------------------*/
+.about {
+ 	padding: 30px 0 30px 0;
+}
+
+.about .abt-img {
+	overflow: hidden;
+}
+
+.about .abt-img img {
+	margin-left: -15px;
+	max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about .abt-img {
+    height: auto;
+  }
+
+  .about .abt-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+.about .cont h2 {
+	color: #333333;
+	font-weight: 500;
+	font-size: 30px;
+	font-family: "Raleway", sans-serif;
+}
+
+.about .cont h3 {
+	color: #555;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 26px;
+	font-style: italic;
+}
+
+.about .cont p {
+	line-height: 26px;
+}
+
+.about .cont p:last-child {
+	margin-bottom: 0;
+}
+
+.about .cont i {
+	font-size: 20px;
+	padding-right: 4px;
+	color: #ffaf00;
+}
+
+.about .cont ul {
+	list-style: none;
+	padding: 0;
+}
+
+.about .cont ul li {
+	padding-bottom: 10px;
+}
+
+.don {
+  color: #72A230 !important;
+  background: #F1F9F9;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.don:hover {
+  color: #F1F9F9 !important;
+  background: #72A230;
+}
+
+.badge-custom {
+  color: #fff;
+  background-color: #72A230;
+}

@@ -1,0 +1,87 @@
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #5f99d8;
+    margin-left: 10px;
+}
+
+.display-3 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.header, .marketing, .footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+@media (min-width: 48em) {
+  .container {
+    max-width: 80rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+.jumbotron {
+  text-align: center;
+  border-bottom: .05rem solid #e5e5e5;
+}
+.jumbotron .btn {
+    padding: .25rem 1rem;
+    font-size: 1.2rem;
+}
+
+
+.marketing {
+  margin: 3rem 0;
+}
+.marketing p + h4 {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header, .marketing, .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) {
+	.jumbotron {
+		padding: 2rem 1rem;
+	}
+}
